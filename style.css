@@ -78,14 +78,14 @@ section {
 }
 #pic {
   border-radius: 500px 500px 500px 10px;
-  width: 250px;
-  grid-column: 3 / span 4;
+  width: 200px;
+  grid-column: 3 /  4;
   transition: width 0.5s, transform 0.5s;
   grid-column-start: 3;
   grid-column-end: auto;
 }
 #pic:hover {
-  width: 300px;
+  width: 250px;
 }
 span {
   color: var(--first-color);
@@ -168,11 +168,6 @@ footer {
   #pic {
     width: 200px;
   }
-  /* ul {
-    width: 300px;
-    display: inline-flex;
-    align-content: flex-end; 
-  } */
 }
 @media (max-width: 600px) {
   #pic {
