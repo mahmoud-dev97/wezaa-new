@@ -44,16 +44,18 @@ nav {
   height: 50px;
 }
 ul {
+  grid-column-start: 3;
+  grid-column-end: 8;
   list-style: none;
-  justify-content: flex-end;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 30px;
+  text-align: right;
+  height: 40px;
+  text-align: right;
 }
 ul li {
   display: inline-block;
   color: var(--socond-color);
   margin-top: 10px;
+  padding-left: 10px;
 }
 nav ul li:hover {
   border-bottom: 2px solid var(--first-color);
@@ -70,17 +72,20 @@ section {
 
 #name {
   color: var(--socond-color);
-  grid-column: 2 / 2;
+  grid-column-start: 1;
+  grid-column-end: auto;
   margin-top: 80px;
 }
 #pic {
   border-radius: 500px 500px 500px 10px;
-  width: 40%;
+  width: 250px;
   grid-column: 3 / span 4;
   transition: width 0.5s, transform 0.5s;
+  grid-column-start: 3;
+  grid-column-end: auto;
 }
 #pic:hover {
-  width: 50%;
+  width: 300px;
 }
 span {
   color: var(--first-color);
@@ -158,4 +163,17 @@ footer {
 }
 #top img:hover {
   width: 40px;
+}
+@media (max-width: 800px) {
+  #pic {
+    width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  #pic {
+    width: 110px;
+  }
+  ul {
+    width: 500px;
+  }
 }
